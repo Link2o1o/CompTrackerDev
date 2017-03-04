@@ -1,4 +1,5 @@
-﻿@{
+﻿@model DevEnvironment.Models
+@{
     ViewData["Title"] = "Registration";
 }
 
@@ -50,7 +51,8 @@ Please, fill in the form below.
         <div>
             <fieldset>
                 <label for="dob">Birthday: </label>
-                <select id="month" name="birthmonth" required="required" data-msg-required="In what month were you born?">
+                <input />
+                @*<select id="month" name="birthmonth" required="required" data-msg-required="In what month were you born?">
                     <option value="" disabled="disabled" selected="selected">Month</option>
                     <option value="01">January</option>
                     <option value="02">February</option>
@@ -79,7 +81,7 @@ Please, fill in the form below.
                 if (this.value.length == this.maxLength && this.value < this.min){ this.value = this.min;
                 document.getElementById('yearmessage').innerHTML = 'The maximum age to participate is XYZ';}"
                 placeholder="YYYY" required="required" data-message-require="In what year were you born?" />
-                <span id="yearmessage"></span>
+                <span id="yearmessage"></span>*@
 
             </fieldset>
         </div>
