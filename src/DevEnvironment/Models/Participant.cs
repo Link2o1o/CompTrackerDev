@@ -19,7 +19,8 @@ namespace DevEnvironment
         public string Awards;
         public string Experience;
 
-        public void NP(string Name, string Username, string Password, string Birthday, string Gender, string Email, string HSName, string NextCollege, string Awards, string Experience) {
+        public void NP(string Name, string Username, string Password, string Birthday, string Gender, string Email, string HSName, string NextCollege, string Awards, string Experience)
+        {
             this.Name = Name;
             this.Username = Username;
             this.Password = Password;
@@ -31,6 +32,6 @@ namespace DevEnvironment
             this.Awards = Awards;
             this.Experience = Experience;
         }
-        public 
+
     }
 }
