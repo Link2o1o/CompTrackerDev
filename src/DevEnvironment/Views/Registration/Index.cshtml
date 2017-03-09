@@ -11,9 +11,12 @@ Please, fill in the form below.
     <div class="container">
         <div class="form-group form-inline">
             <fieldset>
-                <legend>Name: </legend>
+                <!-- Legend for name Fieldset -->
+                <legend>Name</legend>
+                <!-- First Name input and Validation span -->
                 <input asp-for="FirstName" class="form-control" placeholder="First name"/>
                 <span asp-validation-for="FirstName"></span>
+                <!-- Last name input and validation span -->
                 <input asp-for="LastName" class="form-control" placeholder="Surname" />
                 <span asp-validation-for="LastName"></span>
             </fieldset>
@@ -21,14 +24,18 @@ Please, fill in the form below.
         <br>
         <div class="form-group">
             <fieldset>
-                <legend>Username: </legend>
+                <!-- Legend for username fieldset -->
+                <legend>Username</legend>
+                <!-- username input -->
                 <input asp-for="Username" class="form-control" placeholder="Username" />
             </fieldset>
         </div>
         <br>
         <div class="form-group form-inline">
             <fieldset>
-                <legend for="Password">Password: </legend>
+                <!-- Legend for password fieldset -->
+                <legend for="Password">Password</legend>
+                <!-- ConfirmPassword and Password Inputs with Validation spans -->
                 <input asp-for="Password" class="form-control" placeholder="Password" />
                 <span asp-validation-for="Password"></span>
                 <input asp-for="ConfirmPassword" class="form-control" placeholder="Confirm Password" />
@@ -38,14 +45,17 @@ Please, fill in the form below.
         <br>
         <div class="form-group">
             <fieldset>
-                <legend>Birthday: </legend>
+                <!-- Legend for Birthday fieldset -->
+                <legend>Birthday</legend>
+                <!-- Birthday input -->
                 <input asp-for="Birthday" class="form-control"/>
             </fieldset>
         </div>
         <br>
         <div class="form-group">
             <fieldset>
-                <legend>Gender: </legend>
+                <!-- Legend for Gender fieldset -->
+                <legend>Gender</legend>
                 <select class="form-control" id="gender" name="gender" required="required" data-msg-required="What is your gender?">
                     <option value="" disabled="disabled" selected="selected">Choose one</option>
                     <option value="01">Male</option>
@@ -56,21 +66,27 @@ Please, fill in the form below.
         <br>
         <div class="form-group">
             <fieldset>
-                <legend>E-mail:</legend>
+                <!-- Legend for email fieldset -->
+                <legend>E-mail</legend>
+                <!-- Email input -->
                 <input asp-for="Email" class="form-control" placeholder="name@example.com">
             </fieldset>
         </div>
         <br>
         <div class="form-group">
             <fieldset>
+                <!-- Legend for High school name fieldset -->
                 <legend>High School Name:</legend>
+                <!-- High school input -->
                 <input asp-for="HSName" class="form-control" placeholder="Your High School">
             </fieldset>
         </div>
         <br>
         <div class="form-group">
             <fieldset>
+                <!-- Legend for additional information fieldset -->
                 <legend>Additional Information</legend>
+                <!-- Questions and answers with text fields -->
                 <label>What college do you want to go after high school:</label>
                 <input asp-for="NextCollege" class="form-control" placeholder="Future School">
                 <label class="form-group">If you receied any awards, please insert them here:</label>
@@ -80,6 +96,7 @@ Please, fill in the form below.
             </fieldset>
             <br />
         </div>
+        <!-- Submit button with btn and btn-info css -->
      <input type="Submit" value="Submit" class="btn btn-info"/>
      </div>
 </form>
