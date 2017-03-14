@@ -32,6 +32,7 @@ namespace DevEnvironment.Models
 
         //Compares Password with this field
         [Required]
+        [DataType(DataType.Password)]
         [Compare("Password")]
         public string ConfirmPassword { get; set; }
 
